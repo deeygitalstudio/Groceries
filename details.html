@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <nav class="navbar navbar-expand-lg bg-light w3-card fixed-top" style="z-index: 999;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"><img src="./image/651658_16602222_2997645_219b249e.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="icon" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            Varietes
+          </a>
+          <ul class="dropdown-menu" id="sideNav">
+            <li><a class="dropdown-item" href="#">Salad Ingriedients</a></li>
+            <li><a class="dropdown-item" href="#">Jellof Rice Ingriedients</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Recipes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+       <img src="./image/1200px-Shopping_cart_icon.svg.png" type="button"  data-bs-toggle="offcanvas" aria-controls="offcanvasNavbar"  data-bs-target="#offcanvasNavbar" aria-label="Toggle navigation" class="" style="width: 30px; cursor: pointer" alt="">
+       <span id="cartCount"></span>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar">
+  <div class="container-fluid">
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cart Items</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="cart-cont">
+         
+            <div class="tot w3-border">
+                <h1 id="tot">ff</h1>
+                <button class="btn btn-success">Check out</button>
+            </div>
+        </ul>
+      
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="cart-det">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6 col-sm-12" id="image">
+                
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div id="content" class="pt-5">
+
+                 
+    <!-- Content will be dynamically loaded here -->
+               </div>
+                  <div class="button mt-5 d-flex align-items-center justify-content-between">
+                        <button class="btn btn-success" id="btn">Add to Cart</button>
+                        <div class="cta d-flex ">
+                          <div class="w3-button w3-text-white bg-success" id="decrease">-</div>
+                          <div  class="w3-button w3-green mx-1" id="count">1</div>
+                          <div  class="w3-button w3-text-white bg-success" id="increase">+</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <section class="serv ">
+    <div class="container">
+      <h3>OUR SERVICE</h3>
+      <div class="row my-5">
+        <div class="col-md-6 w3-light-gray">
+           <div class="sec-content-div">
+          <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/w6H542X/Fresh.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Fresh</h5>
+              <p>We deliver fresh apples with a 100% guarantee of freshness.</p>
+            </div>
+          </div>
+
+          <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/FKNq4Qr/delivered.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Fast</h5>
+              <p>
+                We deliver your orders as fast as possible, delivery procedure
+                begins as soon as apple is plucked from tree.
+              </p>
+            </div>
+          </div>
+
+           <div class="bars">
+            <div class="icon-container">
+              <img src="https://i.ibb.co/HHQK1wV/happy.png" alt="" />
+            </div>
+            <div class="txt-container">
+              <h5>Satisfying</h5>
+              <p>
+                We guarantee 100% customer satisfaction. We do our best to make
+                your purchase experience smooth. But if we mess up somehow you
+                will get compensated for every inconvenience.
+              </p>
+            </div>
+
+
+      </div>
+      
+        </div>
+        </div>
+       
+        <div class="col-md-6">
+          <div class="img-cn">
+            <img src="./image/young-farmers-are-collecting-orange.jpg" class="image-fluid w3-image" alt="">
+          </div>
+        </div>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="ben bg-success">
+    <div class="container">
+      <h3>Benefits</h3>
+      <div class="row my-5">
+        <div class="vid">
+
+        </div><iframe width="560" height="315" src="https://www.youtube.com/embed/9WxSExNZUcA?si=qcPZE24qKwjb2PWL" title="Benefits of Goceries" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="con">
+    <div class="container">
+      <h3>CONTACT US</h3>
+      <div class="row my-5">
+        <div class="col-md-6  col-sm-12 ">
+          <img src="./image/close-up-old-farmer-holding-basket-vegetables-man-is-standing-garden-senior-black-apron.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-6 col-sm-12 w3-light-gray p-2">
+          <p class="w3-bold">To make an order or just to know more? Please send us a message</p>
+          <form action="">
+             <div class="mb-2">
+  <label for="exampleFormControlInput1" class="form-label">Name</label>
+  <input type="email" class="form-control"  autocomplete="off"  id="exampleFormControlInput1" placeholder="name">
+</div>
+             <div class="mb-2">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control"   autocomplete="off" id="exampleFormControlInput1" placeholder="Email Address">
+</div>
+             <div class="mb-2">
+  <label for="exampleFormControlInput1" class="form-label">Phone</label>
+  <input type="number" class="form-control" autocomplete="off" id="exampleFormControlInput1" placeholder="Location">
+</div>
+<div class="mb-">
+  <label for="exampleFormControlTextarea1" class="form-label">Send us a message</label>
+  <textarea class="form-control"  autocomplete="off" placeholder="place your orders here, and also include your your delivery details here" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-success w3-center">
+    <div class="container">
+      <div class="row">
+        <p class="w3-text-white">Built by Ifedayo Akinbohun</p>
+      </div>
+    </div>
+
+  </footer>
+    
+    <script src="./jquery-3.7.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./app.js"></script>
+    <script src="./bootstrap.min.js"></script>
+</body>
+</html>
